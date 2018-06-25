@@ -20,7 +20,7 @@ chooseItem = (event) => {
 
 render () {
     return (
-        <div>
+        <div className="menu">
             <ItemSelect onClick={this.chooseItem}/>
             <DisplayItems value={this.state.itemType}/>
         </div>
