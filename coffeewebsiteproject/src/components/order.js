@@ -43,13 +43,12 @@ chooseItem = (event) => {
 render () {
     const menuStyle = {
         display : 'flex',
-        justifyContent : 'space-around'
     }
 
     return (
         <div className="menu" style={menuStyle}>
-            <ItemSelect value={this.state.itemType} productArray={this.state.productArray} onClick={this.chooseItem}/>
-            <DisplayItems productArray={this.state.productArray} value={this.state.itemType}/>
+            <ItemSelect className="category" value={this.state.itemType} productArray={this.state.productArray} onClick={this.chooseItem}/>
+            <DisplayItems className="items" productArray={this.state.productArray} value={this.state.itemType}/>
         </div>
     ) 
 }
