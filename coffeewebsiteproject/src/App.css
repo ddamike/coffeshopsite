@@ -1,28 +1,121 @@
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.fa-coffee {
+color: white;
+font-size:50px;
 }
 
-.App-header {
+
+
+.Top {
   background-color: #222;
-  height: 150px;
+  
+  padding:5px 200px;
+  margin: 0px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Top > p {
+  margin: 0;
+}
+.App-header {
+  background-color: #E5AA4A;
+  height: 120px;
+  padding: 0 20px 20px 20px;
+  margin: 0px;
+  color: white;
+  display: flex;
+  flex-direction:column;
+
+}
+.App-intro {
+  color: #E5AA4A;
+  font-size: 25px;
+}
+
+.App-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Tables {
+  display: flex;
+  justify-content: center;
+}
+
+.sq {
+  background-color: #F3F3F3;
+  width: 450px;
+  height:250px;
+  margin: 10px;
+}
+
+.image {
+  border-radius: 10px;
+}
+.indent {
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.Welcome {
+  background-color:white;
+  padding: 20px;
+  color: gray;
+  
+}
+
+.style2 {
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-color: rgba(102,102,102,0.16);
+  width:40%;
+}
+
+.Newsletter {
+  background-color: #F3F3F3;
+  height: 100px;
   padding: 20px;
   color: white;
+  font-size: 2em;
+  text-align: center;
+}
+
+.Footer {
+  background-color: #222;
+  height: 30px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .App-title {
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
+
+.Buttonz {
+  background-color: #E5AA4A;
+  font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.Buttonz:hover {
+  background-color: rgb(235, 196, 135);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.icons {
+font-size: 32px;
+
 }
