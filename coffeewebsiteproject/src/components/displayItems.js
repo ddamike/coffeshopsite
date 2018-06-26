@@ -27,6 +27,7 @@ class DisplayItems extends React.Component {
         let selectedProducts = productArray[this.props.value];
         for (var product in selectedProducts) {
             let price = selectedProducts[product].price;
+            let productDetails = [selectedProducts[product].name, price]
             toDisplay.push(
                 <div
                     style={productStyle}
@@ -34,7 +35,7 @@ class DisplayItems extends React.Component {
                     key={selectedProducts[product].name}
                 >
                     <img
-                        alt="picture"
+                        alt={selectedProducts[product].name}
                         width="100%"
                         src={selectedProducts[product].img}
                     />
@@ -47,7 +48,7 @@ class DisplayItems extends React.Component {
                             .toString()
                             .slice(-2)} `}{' '}
                     </div>
-                    <button >
+                    <button onClick={() => this.props.onClick(productDetails)}>
                             BUY
                     </button>
                 </div>
