@@ -3,28 +3,35 @@ import React from 'react';
 class DisplayItems extends React.Component {
     render() {
         let toDisplay = [];
-        const coffees = ['coffee1', 'coffee2', 'coffee3'];
-        const teas = ['tea 1', 'tea 2', 'tea 3'];
-        const juices = ['juice 1', 'juice 2', 'juice 3'];
-        const breakfasts = ['breakfast 1', 'breakfast 2', 'breakfast 3', "breakfast 4"];
+        let productArray = this.props.productArray
+        console.log(productArray)
 
-        const productArray = {
-            coffees : coffees,
-            teas : teas,
-            juices: juices,
-            breakfasts : breakfasts
+        const productStyle = {
+            border: '1px solid black',
+            width: '100px'
         };
 
-        productArray[this.props.value].forEach((product, index) => {
-            toDisplay.push(<div key={index}> {product} </div>);
-        });
+        let selectedProducts = productArray[this.props.value];
+        for (var product in selectedProducts) {
+            let price = selectedProducts[product].price;
+            toDisplay.push(
+                <div
+                    style={productStyle}
+                    className="product"
+                    key={selectedProducts[product].name}
+                >
+                    <div>{selectedProducts[product].name} </div>
+                    <img alt="picture" width="100%" src={selectedProducts[product].img} />
+                    <div>
+                        {`£ ${Math.floor(price / 100)}.${price
+                            .toString()
+                            .slice(-2)} `}{' '}
+                    </div>
+                </div>
+            );
+        }
 
-        return (
-            <div className="itemSelect">
-                {toDisplay}
-            </div>
-        )
-        
+        return <div className="itemSelect">{toDisplay}</div>;
     }
 }
 
