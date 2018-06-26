@@ -78,15 +78,18 @@ class App extends Component {
 
                 <div className="Newsletter">
                     <p>
-                        Sign up to our newsletter: <input type="text" />
+                        Sign up to our newsletter:&nbsp;&nbsp; 
+                        <span className="form"> Name:&nbsp;<input type="text" value="...."/>&nbsp;&nbsp;Email Address:&nbsp;<input type="text" value="...."/>&nbsp;&nbsp;<input type="submit" /></span>
                     </p>
+                    
                 </div>
                 <div className="Footer">
-                    <img src="http://via.placeholder.com/50x50" />
+                    
+                    <i className="fab fa-java"></i>
 
                     <div className="Text">
                         Copyright Black Bean Coffee House © 2018 | Design and
-                        Development by ______.
+                        Development by Mike & Wayne.
                     </div>
                     <div className="icons">
                         <i class="fab fa-facebook-square" />&nbsp;

@@ -34,17 +34,37 @@ class Home extends React.Component {
                 />
                 <br />
                 <br />
-                <h1 className="App-intro">Testimonials</h1>
-                <br />
+                <h1 className="App-intro"><hr className="style2" />Testimonials<hr className="style2" /></h1>
+                
                 <div className="Tables">
-                    <div className="sq">s</div>
-                    <div className="sq">x</div>
-                    <div className="sq">c</div>
+                    <div className="sq"><br /><br />Lovely Classy Place To Go For A Coffee & A Bite To Eat In Manchester. Great Customer Service & The Food Is Amazing. I Had A Home Made – Mediterranean Chicken Sourdough – Made By George. Was Absolutely Beautiful. First Time I Have Ever Been. Safe To Say I Will Be Returning!
+                    <br />
+                    <br />
+                    <br />
+                   <p className="name"> Peter &nbsp;<i className="fas fa-user"></i></p></div>
+                    <div className="sq"><br /><br />First time here. Really friendly owners. Very attentive service. Great touch to offer customers a little sample cup of soup to try. Another reason why you should visit independent shops.
+                    <br />
+                    <br />
+                    <br />
+                    <p className="name">Ishmal &nbsp;<i className="fas fa-user"></i></p></div>
+                    <div className="sq"><br /><br />The best coffee in Manchester! Super friendly, clean & trendy coffee shop. Will visit again!
+                    <br />
+                    <br />
+                    <br />
+                    James &nbsp;<i className="fas fa-user"></i></div>
                 </div>
                 <div className="Tables">
-                    <div className="sq">f</div>
-                    <div className="sq">s</div>
-                    <div className="sq">f</div>
+                    <div className="sq"><br /><br />Very friendly staff and delicious food. I usually go for a soup of the day. Home made soup is always fresh and tasty. I would highly recommend this coffee shop, they are always good with my little girl too! <br />
+                    <br />
+                    <br />Imran &nbsp;<i className="fas fa-user"></i></div>
+                    <div className="sq"><br /><br />Whenever I am in Manchester I stop in this excellent local coffee shop/cafe for something basic and traditional before I walk the old railway line down to Salford or the old canal to Bolton. If you want egg and chips like your mum made them fifty years ago, with a mug of tea, this is a real treat, and very reasonably priced. There is a specials board, and everything hot is cooked on demand. I love it.
+                    <br />
+                    <br />
+                    <br />Victor &nbsp;<i className="fas fa-user"></i></div>
+                    <div className="sq"><br /><br />Not too bad, as a coffee connoisseur i have been to better however the staff seem pleasant and are on hand to help.
+                    <br />
+                    <br />
+                    <br />Eden &nbsp;<i className="fas fa-user"></i></div>
                     <br />
                 </div>
             </div>

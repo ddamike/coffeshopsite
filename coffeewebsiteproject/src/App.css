@@ -54,6 +54,10 @@ font-size:50px;
   width: 450px;
   height:250px;
   margin: 10px;
+  padding-left: 3em;
+  padding-right: 3em;
+  font-weight: 200;
+ 
 }
 
 .image {
@@ -82,9 +86,10 @@ font-size:50px;
   background-color: #F3F3F3;
   height: 100px;
   padding: 20px;
-  color: white;
+  color: gray;
   font-size: 2em;
-  text-align: center;
+  text-align: left;
+  font-weight: 200;
 }
 
 .Footer {
@@ -118,4 +123,12 @@ font-size:50px;
 .icons {
 font-size: 32px;
 
+}
+.form {
+  font-size: 0.5em;
+ 
+}
+
+.fa-java {
+  font-size: 4em;
 }
