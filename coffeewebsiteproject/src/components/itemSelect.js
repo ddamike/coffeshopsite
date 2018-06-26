@@ -9,10 +9,8 @@ class ItemSelect extends React.Component {
         };
 
         const activeItem = {
-            border: '1px solid black',
-            height: '50px',
-            width: '150px',
-            backgroundColor: 'yellow'
+
+            backgroundColor: '#e5aa4a'
         };
 
         const itemSelectStyle = {
@@ -20,15 +18,12 @@ class ItemSelect extends React.Component {
             flexDirection: 'column',
             border: '1px solid black',
             height: '200px',
-            width: '150px'
         };
 
         let chooseItemStyle = type => {
             if (type === this.props.value) {
                 return activeItem;
-            } else {
-                return itemStyle;
-            }
+            } 
         };
 
         //for displaying menu items
@@ -38,6 +33,7 @@ class ItemSelect extends React.Component {
         keys.forEach(key => {
             menuOptions.push(
                 <div
+                    className="menu-options"
                     key={key}
                     style={chooseItemStyle(key)}
                     onClick={() => this.props.onClick(key)}
@@ -48,7 +44,7 @@ class ItemSelect extends React.Component {
         });
 
         return (
-            <div style={itemSelectStyle} className="itemSelect">
+            <div className="itemSelect">
                 {menuOptions}
                 </div>
         );

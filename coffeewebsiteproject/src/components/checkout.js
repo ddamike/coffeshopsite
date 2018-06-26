@@ -14,7 +14,7 @@ class Checkout extends React.Component {
             this.props.order.forEach(order => {
                 Total += order[1];
                 toRender.push(
-                    <div>
+                    <div className="checkout-items" >
                         <div>{order[0]}</div>
                         <div>
                             {`£ ${Math.floor(
@@ -25,7 +25,7 @@ class Checkout extends React.Component {
                 );
             });
             toRender.push(
-                <div>
+                <div className="checkout-items" >
                     <div>Total</div>
                     <div>
                         {`£ ${Math.floor(Total / 100)}.${Total.toString().slice(
@@ -35,9 +35,9 @@ class Checkout extends React.Component {
                 </div>
             );
         }
-
+        
         return (
-            <div>
+            <div className="checkout">
                 <h2>Order</h2>
                 <div>{toRender}</div>
                 <h2>Total</h2>

@@ -93,14 +93,9 @@ class Order extends React.Component {
     };
 
     render() {
-        const menuStyle = {
-            display: 'flex'
-        };
-
         return (
-            <div className="menu" style={menuStyle}>
+            <div ref="menu" className="menu">
                 <ItemSelect
-                    className="category"
                     value={this.state.itemType}
                     productArray={this.state.productArray}
                     onClick={this.chooseItem}

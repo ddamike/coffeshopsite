@@ -31,8 +31,8 @@ class ContactForm extends React.Component {
 
     render() {
         return (
-            <div className="formContainer">
-            <form onSubmit={this.handleSubmit}>
+            <div >
+            <form className="formContainer" onSubmit={this.handleSubmit}>
                 <label>
                     Name:
                     <input

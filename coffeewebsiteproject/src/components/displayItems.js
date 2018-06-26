@@ -6,23 +6,7 @@ class DisplayItems extends React.Component {
         let productArray = this.props.productArray;
         console.log(productArray);
 
-        const productStyle = {
-            border: '1px solid black',
-            display : "flex",
-            flexDirection : "column",
-            width: '150px',
-            margin: '20px',
-            minHeight: '250px',
-            height : '100%',
-            alignContent : 'center',
-            justifyContent : 'space-between'
-        };
 
-        const displayItemsStyle = {
-            display: 'flex',
-            flexWrap: 'wrap',
-            height : '100%'
-        };
 
         let selectedProducts = productArray[this.props.value];
         for (var product in selectedProducts) {
@@ -30,7 +14,6 @@ class DisplayItems extends React.Component {
             let productDetails = [selectedProducts[product].name, price]
             toDisplay.push(
                 <div
-                    style={productStyle}
                     className="product"
                     key={selectedProducts[product].name}
                 >
@@ -56,8 +39,10 @@ class DisplayItems extends React.Component {
         }
 
         return (
-            <div style={displayItemsStyle} className="itemSelect">
-                {toDisplay}
+            <div className="flex-center">
+                <div className="displayItems">
+                    {toDisplay}
+                </div>
             </div>
         );
     }

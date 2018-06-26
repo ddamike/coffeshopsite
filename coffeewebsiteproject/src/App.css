@@ -1,134 +1,191 @@
 .App {
-  text-align: center;
-
+    text-align: center;
 }
 
 .fa-coffee {
-color: white;
-font-size:50px;
+    color: white;
+    font-size: 50px;
 }
 
-
-
 .Top {
-  background-color: #222;
-  
-  padding:5px 200px;
-  margin: 0px;
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
+    background-color: #222;
+
+    padding: 5px 200px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Top > p {
-  margin: 0;
+    margin: 0;
 }
 .App-header {
-  background-color: #E5AA4A;
-  height: 120px;
-  padding: 0 20px 20px 20px;
-  margin: 0px;
-  color: white;
-  display: flex;
-  flex-direction:column;
-
+    background-color: #e5aa4a;
+    height: 120px;
+    padding: 0 20px 20px 20px;
+    margin: 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
 .App-intro {
-  color: #E5AA4A;
-  font-size: 25px;
+    color: #e5aa4a;
+    font-size: 25px;
 }
 
 .App-nav {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .Tables {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .sq {
-  background-color: #F3F3F3;
-  width: 450px;
-  height:250px;
-  margin: 10px;
-  padding-left: 3em;
-  padding-right: 3em;
-  font-weight: 200;
- 
+    background-color: #f3f3f3;
+    width: 450px;
+    height: 250px;
+    margin: 10px;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-weight: 200;
 }
 
 .image {
-  border-radius: 10px;
+    border-radius: 10px;
 }
 .indent {
-  padding-left: 10em;
-  padding-right: 10em;
+    padding-left: 10em;
+    padding-right: 10em;
 }
 
 .Welcome {
-  background-color:white;
-  padding: 20px;
-  color: gray;
-  
+    background-color: white;
+    padding: 20px;
+    color: gray;
 }
 
 .style2 {
-  border-top-width: 3px;
-  border-top-style: solid;
-  border-color: rgba(102,102,102,0.16);
-  width:40%;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-color: rgba(102, 102, 102, 0.16);
+    width: 40%;
 }
 
 .Newsletter {
-  background-color: #F3F3F3;
-  height: 100px;
-  padding: 20px;
-  color: gray;
-  font-size: 2em;
-  text-align: left;
-  font-weight: 200;
+    background-color: #f3f3f3;
+    height: 100px;
+    padding: 20px;
+    color: gray;
+    font-size: 2em;
+    text-align: left;
+    font-weight: 200;
 }
 
 .Footer {
-  background-color: #222;
-  height: 30px;
-  padding: 20px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #222;
+    height: 30px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
-
 
 .Buttonz {
-  background-color: #E5AA4A;
-  font-size: 20px;
+    background-color: #e5aa4a;
+    font-size: 20px;
     color: white;
-    border: 2px solid white;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
-
 }
 .Buttonz:hover {
-  background-color: rgb(235, 196, 135);
+    background-color: rgb(235, 196, 135);
 }
 
 .icons {
-font-size: 32px;
-
+    font-size: 32px;
 }
 .form {
-  font-size: 0.5em;
- 
+    font-size: 0.5em;
 }
 
 .fa-java {
-  font-size: 4em;
+    font-size: 4em;
 }
+
+.menu {
+    width: 90%;
+    display: flex;
+    justify-content: 'space-between';
+    height: auto;
+    margin: 0 auto;
+    padding-top : 40px;
+    padding-bottom : 20px;
+}
+
+.itemSelect {
+    padding-top: 20px;
+    min-width: 20%;
+}
+
+.flex-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.displayItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.checkout {
+    height: 100%;
+    min-width: 20%;
+
+}
+
+.product {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 20px;
+    min-height: 250px;
+    max-height: 300px;
+    align-content: center;
+    justify-content: space-between;
+    flex-grow: 0;
+}
+
+.checkout-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-options {
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.formContainer{
+  display : flex;
+  flex-direction: column;
+}
+
+label {
+  padding-top : 20px;
+}
+
