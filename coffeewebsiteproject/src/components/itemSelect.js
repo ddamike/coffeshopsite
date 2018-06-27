@@ -2,12 +2,6 @@ import React from 'react';
 
 class ItemSelect extends React.Component {
     render() {
-        const itemStyle = {
-            border: '1px solid black',
-            height: '50px',
-            width: '150px'
-        };
-
         const activeItem = {
 
             backgroundColor: '#e5aa4a'

@@ -27,6 +27,26 @@ class ContactForm extends React.Component {
                Email :  ${this.state.email} 
                Telephone : ${this.state.telephone}` );
         event.preventDefault();
+            let name = `${this.state.name}`
+            let email = `${this.state.email}`
+            let message = `${this.state.message}`
+        var JSONdata = {
+            name ,
+            email,
+            message
+        }
+    
+    
+       fetch("/form", {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+            method: 'POST',
+            body: JSON.stringify(JSONdata), 
+          })
+          .then(response => response.json())
+          .then(data => console.log(data)) 
     }
 
     render() {
